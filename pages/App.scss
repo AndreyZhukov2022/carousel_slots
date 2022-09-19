@@ -1,0 +1,40 @@
+@use "sass:map";
+
+$colors: (
+  "blue-black": #0C2B48,
+  "dark-blue": #12395D,
+  "blue": #2A577E,
+  "big-tab-blue": #0460A9,
+  "light-blue": #72C9DD,
+  "pale-blue": #F1FDFF,
+  "dark-yellow": #F9B133,
+  "yellow": #FAC515
+);
+
+$font-weight: (
+  "bold": 700,
+  "semibold": 600,
+  "regular": 400
+);
+
+$font-size: (
+  "h1": 4.2em,
+  "h2": 4.2em,
+  "h3": 3.2em,
+  "content": 2em,
+  "desktop": 2.4em
+);
+
+$shadows: (
+  "shadowXL": 0px 10px 26px 10px rgba(0, 0, 0, 0.08),
+  "shadowL": 0px 5px 18px 6px rgba(0, 0, 0, 0.12),
+  "basic-blue": 0px 6px 20px rgba(4, 96, 169, 0.18),
+  "basic-yellow": 0px 6px 20px rgba(249, 177, 51, 0.24)
+);
+
+$gradients: (
+  "blueblack-blue": linear-gradient(274.15deg, map.get($colors, "blue") 3.47%, map.get($colors, "dark-blue") 66.48%),
+  "main-header": linear-gradient(180deg, map.get($colors, "blue") 0%, map.get($colors, "dark-blue") 99.25%),
+  "yellow-yellow": linear-gradient(267.92deg, #FDC93F 15.13%, #F8B032 100.03%),
+  "paleblue-white": linear-gradient(55.31deg, map.get($colors, "pale-blue") 16.56%, #FFFFFF 91.12%)
+);

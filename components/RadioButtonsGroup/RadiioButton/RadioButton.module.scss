@@ -1,0 +1,76 @@
+@use 'sass:map';
+@use '../../../pages/App.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid #29557C;
+  box-sizing: border-box;
+  padding: 2px;
+
+  &-checked {
+    @extend .container;
+    border: none;
+
+      .label {
+        font-weight: map.get(App.$font-weight, "bold");
+        color: #FFF;        
+      }
+  }
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.label {
+  color: #29557C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 87px;
+    height: 36px;
+    background: transparent;
+
+    &-checked {
+      background: map.get(App.$gradients, "blueblack-blue");
+      padding: 0 2px;
+      width: 97px;
+    }
+  }
+
+  .label {
+    font-weight: map.get(App.$font-weight, "bold");
+    font-size: 1.2em;
+    line-height: 10px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .container {
+    width: 232px;
+    height: 34px;
+    background: #FFF;
+
+      &-checked {
+        background: map.get(App.$gradients, "blueblack-blue");
+      }
+  }
+
+  .label {
+    font-weight: map.get(App.$font-weight, "regular");
+    font-size: 1.6em;
+  }
+}
