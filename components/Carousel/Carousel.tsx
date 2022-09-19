@@ -43,7 +43,7 @@ const Carousel: FC = () => {
       slidesPerView: 5,
       slidesPerGroup: 5,
       spaceBetween: 28,
-      width: 1440,
+      width: 1327,
     }
   };
 
@@ -69,11 +69,9 @@ const Carousel: FC = () => {
           setInitSwiper(true);
         }}
         breakpoints={breakpoints}
-        slideClass={styles.slide}
-        slideVisibleClass={styles.slide}
       >
         {[...CASINO, ...CASINO].map((casino) => (
-          <SwiperSlide key={`${casino.casino}`} className={styles.slide}>
+          <SwiperSlide key={`${casino.casino}`} >
             <Card
               casino={casino.casino}
               logo={casino.logo}
