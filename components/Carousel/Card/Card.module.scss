@@ -48,7 +48,7 @@
 }
 
 .casino {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .body {
@@ -71,8 +71,8 @@
   font-family: 'Roboto', sans-serif;
   font-size: map-get(App.$font-size, 'content');
   font-weight: map-get(App.$font-weight, 'regular');
+  line-height: 33px;
   color: map.get(App.$colors, 'big-tab-blue');
-  line-height: 1.7em;
   background: linear-gradient(map.get(App.$colors, 'big-tab-blue'),map.get(App.$colors, 'big-tab-blue')) bottom /* left or right or else */ no-repeat;
   background-size: 35% 2px;
 }
@@ -88,35 +88,36 @@
   font-family: 'Roboto', sans-serif;
   display: block;
   font-family: Roboto, sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: map-get(App.$font-weight, 'regular');
   color: map.get(App.$colors, 'dark-blue');
   text-align: right;
   padding-right: 4px;
-  line-height: .9em;
+  line-height: 80%;
 }
 
 .amount {
   font-family: 'Roboto', sans-serif;
   font-family: Roboto, sans-serif;
-  font-size: 5.4em;
+  font-size: 5.4rem;
   font-weight: map-get(App.$font-weight, 'semibold');
   color: map.get(App.$colors, 'dark-blue');
-  line-height: .9em;
+  line-height: 90%;
 }
 
 .free-spin {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.1em;
+  font-size: 2.1rem;
   font-weight: map-get(App.$font-weight, 'semibold');
   color: map.get(App.$colors, 'dark-blue');
   text-align: center;
-  line-height: 1.1em;
+  line-height: 25px;
 }
 
 .cleopatra {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
+  line-height: 15px;
   font-weight: map-get(App.$font-weight, 'regular');
   color: map.get(App.$colors, 'big-tab-blue');
   text-align: center;
@@ -125,7 +126,7 @@
 .button-container {
   width: 200px;
   display: flex;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .flag-icon {

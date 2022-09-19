@@ -53,7 +53,7 @@
 
   .label {
     font-weight: map.get(App.$font-weight, "bold");
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 10px;
   }
 }
@@ -71,6 +71,6 @@
 
   .label {
     font-weight: map.get(App.$font-weight, "regular");
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 }
